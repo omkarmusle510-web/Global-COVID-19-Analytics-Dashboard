@@ -12,19 +12,75 @@ st.set_page_config(
 #dark-mode dashboard
 st.markdown("""
 <style>
+
+/* Main App Background */
 .stApp { 
     background: linear-gradient(135deg, #0f172a, #1e293b, #334155); 
 }
-h1, h2, h3, p, label, div { 
-    color: white !important; 
+
+/* Text Colors */
+h1, h2, h3, p, label, div, span {
+    color: white !important;
 }
-/* Style the metric boxes so they look like glass/cards */
+            
+/* Sidebar Background */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #020617, #0f172a) !important;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Sidebar Text */
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Selectbox */
+.stSelectbox > div > div {
+    background-color: #1e293b !important;
+    color: white !important;
+    border-radius: 8px;
+}
+
+/* Radio Buttons */
+div[role="radiogroup"] label {
+    color: white !important;
+}
+
+/* Download Button */
+.stDownloadButton button {
+    background-color: #2563eb !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+/* Normal Buttons */
+.stButton button {
+    background-color: #2563eb !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+/* Metric Cards */
 [data-testid="stMetric"] {
     background-color: rgba(255,255,255,0.05);
     padding: 15px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
 }
+
+/* DataFrame */
+[data-testid="stDataFrame"] {
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 10px;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    color: white !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
