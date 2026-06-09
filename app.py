@@ -37,13 +37,13 @@ section[data-testid="stSidebar"] * {
 /* Selectbox */
 .stSelectbox > div > div {
     background-color: #1e293b !important;
-    color: white !important;
+    color: black !important;
     border-radius: 8px;
 }
 
 /* Radio Buttons */
 div[role="radiogroup"] label {
-    color: white !important;
+    color: black !important;
 }
 
 /* Download Button */
