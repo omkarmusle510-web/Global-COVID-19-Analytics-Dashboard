@@ -36,9 +36,20 @@ section[data-testid="stSidebar"] * {
 
 /* Selectbox */
 .stSelectbox > div > div {
-    background-color: #1e293b !important;
-    color: black !important;
+    background-color: #of172a !important;
+    color: white !important;
     border-radius: 8px;
+}
+
+/* Dropdown menu */
+div[role="listbox"] {
+    background_color: #of172a !important;
+    color: white !important;
+}
+
+div[role="option"]:hover {
+    background-color: #1e293b !important;
+    color: white !important;
 }
 
 /* Radio Buttons */
