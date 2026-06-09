@@ -54,7 +54,7 @@ div[role="option"]:hover {
 
 /* Radio Buttons */
 div[role="radiogroup"] label {
-    color: black !important;
+    color: white !important;
 }
 
 /* Download Button */
